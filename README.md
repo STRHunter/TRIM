@@ -9,7 +9,9 @@ To run the executable code data_cleaning
 $data_cleaning unclean.fna input.txt
 
 where unclean.fna contains genome sequene along with non-acgt characters, annotationas and delimeters
+
       input.txt contains genomes only with acgt characters.
+      
 
 # TRIM
 To compile the source code TRIM.c
