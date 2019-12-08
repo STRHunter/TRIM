@@ -2,7 +2,7 @@
 
 To compile the source code data_cleaning.c
 
-$gcc data_cleaning.c -o data_cleaning
+$gcc data_cleaning.c -o data_cleaning -DMAX=0
 
 To run the executable code data_cleaning
 
