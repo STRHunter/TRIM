@@ -1,9 +1,0 @@
-for i=1:1:N
-    myfilename = sprintf('TRIM_Vector_Genome%d.txt',i);
-    text = fileread(myfilename);
-    arr_text = strsplit(text);
-    x = char(arr_text); 
-    x_n = str2num(x);
-    x_n= x_n';
-    TRIM_DB(i,:) = x_n; 
-   end
