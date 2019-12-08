@@ -1,0 +1,25 @@
+for i =1:1:16384
+Amphibian(i) = sum(TRIM_DB(1:5,i)); % TRIM_DB(6,:) is left for test data
+MTV(1) = Amphibian/5;
+
+Reptile(i) = sum(TRIM_DB(7:9,i)); % TRIM_DB(10,:) is left for test data
+MTV(2)= Reptile/3;
+
+Bird(i) = sum(TRIM_DB(11:30,i)); % TRIM_DB(31,:) to TRIM_DB(36,:) is left for test data
+MTV(3)= Bird/20;
+
+Insect(i) = sum(TRIM_DB(37:92,i)); % TRIM_DB(93,:) to TRIM_DB(99,:) is left for test data
+MTV(4)= Insect/56;
+
+Fish(i) = sum(TRIM_DB(100:173,i)); % TRIM_DB(174,:) to TRIM_DB(183,:) is left for test data
+MTV(5)= Fish/74;
+
+Mammal(i) = sum(TRIM_DB(184:271,i)); % TRIM_DB(272,:) to TRIM_DB(296,:) is left for test data
+MTV(6)= Mammal/88;
+
+NonAnimal(i) = sum(TRIM_DB(297:301,i)); 
+NonAnimal(i) = sum(TRIM_DB(307:311,i)); % TRIM_DB(302,:) to TRIM_DB(306,:) is left for test data
+MTV(7)= NonAnimal/10;
+
+end
+% end script
