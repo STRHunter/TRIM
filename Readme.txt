@@ -21,8 +21,14 @@ ii) System commands to do the task
 
 
 ****************************************************************************************************
-Transforming genomic sequences into their corresponding TRIM vectors
+TRIM vector computation 
 
+
+i) What is does ?
+
+   Transforming genomic sequences into their corresponding TRIM vectors
+ 
+ii)  System commands to do the task
 
      To compile the source code 'TRIM.c':   $gcc TRIM.c -DMAX=3900000000 -lm -o TRIM
 
@@ -52,5 +58,20 @@ Transforming genomic sequences into their corresponding TRIM vectors
      
      
 
-     
+*****************************************************************************************************
+
+Trainig the classifier TRIMEC
+
+i) What is does ?
+
+  This code was used to train the TRIMEC. However, it is not essential to run the taxa identification utility. We have uploaded 
+  and provided the instruction how to use pre-built training in the taxa identification section. So user can skip this steps.
+  
+ii)  System commands to do the task  
+  
+To compile the source code 'Bagging_classifier_v1_Building.c': $gcc Bagging_classifier_v1_Building.c -lm -o TRIM_classifier_Bulder
+
+To run the executable file 'TRIM':   $./TRIM_classifier_Bulder
+
+
 
