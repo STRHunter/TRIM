@@ -21,14 +21,14 @@ ii) System commands to do the task
 
 
 ****************************************************************************************************
-Transforming a genomic sequence into the corresponding TRIM vector
+Transforming genomic sequences into their corresponding TRIM vectors
 
 
      To compile the source code 'TRIM.c':   $gcc TRIM.c -DMAX=3900000000 -lm -o TRIM
 
      (The option -DMAX indicates maximum length of genome the program will accomodate in RAM, 
-      which is presently the maximum available genome length in NCBI repository. For any genome 
-      upto this length, user need not specify length of the experimenting sequence.)
+      which is presently the maximum available genome length of the species taken from in NCBI repository under this study. 
+      For any genome upto this length, user need not specify length of the experimenting sequence.)
  
      To run the executable file 'TRIM':   $TRIM Genome.fna.txt -k 7 > TRIM_Vector_Genome.txt
 
