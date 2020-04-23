@@ -59,6 +59,7 @@ ii)  System commands to do the task
      
      Note: The utility 'TRIM' autimaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
      to the Nth input genome.  
+     
      We have used the utility to generate 218 TRIM vectos for 296 animal genomes and 2 non-animal genomes at k=7 as 
      
      TRIM_vector_Genome1.txt to TRIM_vector_Genome3.txt : Taxa Insect
@@ -72,6 +73,7 @@ ii)  System commands to do the task
                                 and
                                 
     We have used the utility to generate 91 TRIM vectos for 78 animal genomes and 13 non-animal genomes at k=6 as
+    
     TRIM_vector_Genome1.txt to TRIM_vector_Genome59.txt : Taxa Insect
     TRIM_vector_Genome60.txt to TRIM_vector_Genome78.txt : Taxa Fish
     TRIM_vector_Genome79.txt to TRIM_vector_Genome91.txt : Taxa Non-animal
@@ -114,6 +116,30 @@ Provide the range of indices of TRIM Vectors for the class Non-animal
 Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 217 218 2
 Classifier with motif length %d has been written to file Bagging_claffifier_k=7.txt
 
+
+
+
+The output of the runtime instance used to create the file 'Bagging_claffifier_k=6.txt':
+
+.......................................................
+Enter the number of TRIM Vectors to loan in-meory: 91
+Enter the motif lengh used to construct TRIM Vectors: 6
+Collecting prior-knowledge aout "class-label" of TRIM Vectors
+Provide the range of indices of TRIM Vectors for the class Amphibian
+Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 0 0 0
+Provide the range of indices of TRIM Vectors for the class Reptile
+Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training  0 0 0
+Provide the range of indices of TRIM Vectors for the class Bird
+Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 0 0 0
+Provide the range of indices of TRIM Vectors for the class Insect
+Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 1 59  50
+Provide the range of indices of TRIM Vectors for the class Fish
+Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 60 78 15
+Provide the range of indices of TRIM Vectors for the class Mammal
+Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 0 0 0
+Provide the range of indices of TRIM Vectors for the class Non-animal
+Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 79 91 10
+Classifier with motif length %d has been written to file Bagging_claffifier_k=6.txt
 
 
 
