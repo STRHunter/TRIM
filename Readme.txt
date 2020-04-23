@@ -16,6 +16,7 @@ ii) System commands to do the task
    To run the executable code 'data_cleaning':   $./data_cleaning Genome.fna Genome.fna.txt
 
    'Genome.fna' is input file. It contains raw genome sequence that includes the non-acgt characters, annotationas and delimeters.
+   
     The output will be stored in a file 'Genome.fna.txt' or any user specified filename, which will be the clean sequence containing only the acgt characters. 
 
 
@@ -56,7 +57,24 @@ ii)  System commands to do the task
      Constructing TRIM vector for genome stored in file: Genome4.fna.txt
      Storing the TRIM vector in: TRIM_vector_Genome4.txt
      
+     Note: The utility 'TRIM' autimaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
+     to the Nth input genome.  
+     We have used the utility to generate 218 TRIM vectos for 296 animal genomes and 2 non-animal genomes at k=7 as 
      
+     TRIM_vector_Genome1.txt to TRIM_vector_Genome3.txt : Taxa Insect
+     TRIM_vector_Genome4.txt to TRIM_vector_Genome67.txt : Taxa Fish
+     TRIM_vector_Genome68.txt to TRIM_vector_Genome93.txt : Taxa Bird
+     TRIM_vector_Genome94.txt to TRIM_vector_Genome206.txt : Taxa Mammal
+     TRIM_vector_Genome207.txt to TRIM_vector_Genome212.txt : Taxa Amphibian
+     TRIM_vector_Genome213.txt to TRIM_vector_Genome216.txt : Taxa Reptile
+     TRIM_vector_Genome217.txt to TRIM_vector_Genome218.txt : Taxa Non_animal
+                           
+                                and
+                                
+    We have used the utility to generate 91 TRIM vectos for 78 animal genomes and 13 non-animal genomes at k=6 as
+    TRIM_vector_Genome1.txt to TRIM_vector_Genome59.txt : Taxa Insect
+    TRIM_vector_Genome60.txt to TRIM_vector_Genome78.txt : Taxa Fish
+    TRIM_vector_Genome79.txt to TRIM_vector_Genome91.txt : Taxa Non-animal
 
 *****************************************************************************************************
 
