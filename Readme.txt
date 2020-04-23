@@ -114,7 +114,7 @@ Provide the range of indices of TRIM Vectors for the class Mammal
 Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 94 206 90
 Provide the range of indices of TRIM Vectors for the class Non-animal
 Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 217 218 2
-Classifier with motif length %d has been written to file Bagging_claffifier_k=7.txt
+Classifier with motif length 7 has been written to file Bagging_claffifier_k=7.txt
 
 
 
@@ -139,7 +139,7 @@ Provide the range of indices of TRIM Vectors for the class Mammal
 Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 0 0 0
 Provide the range of indices of TRIM Vectors for the class Non-animal
 Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 79 91 10
-Classifier with motif length %d has been written to file Bagging_claffifier_k=6.txt
+Classifier with motif length 7 has been written to file Bagging_claffifier_k=6.txt
 
 
 
@@ -156,7 +156,253 @@ ii)  System commands to do the task
  
  To run the executable file 'TRIMEC': $./TRIMEC
  
- Supplementary_File_F1.docx contains several runtime instatnces of TRIMEC.
+ A typical instance of the TRIMEC is as 
+ 
+ .......................................................
+ ...........................Welcome to genome classifier utility.....................
+
+Input file name of the genome to identify its taxa: 
+...........................System is performing the following tasks................
+
+Constructing TRIM vector for the genome stored in file: D1.txt ... 
+at k=6
+20276.291245
+at k=7
+28686.171945
+sum 20276.291245 
+0.000000 
+sum 28686.171945 
+0.000000 
+
+Total entropy maximizes at k=7
+Locading corresponding classifier....
+
+Instance 0   16384
+Instance 1   16384
+Instance 2   16384
+Instance 3   16384
+Instance 4   16384
+Instance 5   16384
+Instance 6   16384
+Instance 7   16384
+Instance 8   16384
+Instance 9   16384
+Instance 10   16384
+Instance 11   16384
+Instance 12   16384
+Instance 13   16384
+Instance 14   16384
+Instance 15   16384
+Instance 16   16384
+Instance 17   16384
+Instance 18   16384
+Instance 19   16384
+Instance 20   16384
+Instance 21   16384
+Instance 22   16384
+Instance 23   16384
+Instance 24   16384
+
+0.068795 
+0.074580 
+0.085106 
+0.317337 
+0.075354 
+0.075393 
+0.500000 
+
+0.028597 
+0.073390 
+0.087673 
+0.300203 
+0.074356 
+0.073517 
+0.500000 
+
+0.046292 
+0.073192 
+0.086085 
+0.365971 
+0.075493 
+0.074496 
+0.500000 
+
+0.034589 
+0.075352 
+0.085452 
+0.321611 
+0.076503 
+0.075101 
+0.500000 
+
+0.043827 
+0.063790 
+0.084590 
+0.300203 
+0.078164 
+0.074720 
+0.500000 
+
+0.068795 
+0.070581 
+0.088238 
+0.326818 
+0.080512 
+0.075077 
+0.500000 
+
+0.064444 
+0.070353 
+0.087800 
+0.300203 
+0.075759 
+0.073566 
+0.500000 
+
+0.040569 
+0.067919 
+0.085370 
+0.300203 
+0.073270 
+0.075941 
+0.500000 
+
+0.071189 
+0.070353 
+0.087103 
+0.306424 
+0.075623 
+0.074947 
+0.500000 
+
+0.057695 
+0.073390 
+0.085872 
+0.309254 
+0.075374 
+0.073982 
+0.500000 
+
+0.075128 
+0.067919 
+0.086699 
+0.326818 
+0.077091 
+0.075563 
+0.500000 
+
+0.087444 
+0.083584 
+0.085746 
+0.306424 
+0.075192 
+0.076949 
+0.500000 
+
+0.080872 
+0.080793 
+0.087114 
+0.321611 
+0.074348 
+0.076758 
+0.500000 
+
+0.082834 
+0.075352 
+0.084662 
+0.300203 
+0.075373 
+0.074815 
+0.500000 
+
+0.048884 
+0.073192 
+0.086113 
+0.321611 
+0.077589 
+0.076411 
+0.500000 
+
+0.056742 
+0.088158 
+0.084874 
+0.326818 
+0.075996 
+0.076420 
+0.500000 
+
+0.037962 
+0.070581 
+0.083478 
+0.300203 
+0.077337 
+0.074267 
+0.500000 
+
+0.045507 
+0.069565 
+0.087489 
+0.309254 
+0.076216 
+0.075066 
+0.500000 
+
+0.075060 
+0.070353 
+0.085335 
+0.300203 
+0.075295 
+0.075401 
+0.500000 
+
+0.089092 
+0.068500 
+0.086290 
+0.321611 
+0.075817 
+0.075501 
+0.500000 
+
+0.072141 
+0.083584 
+0.083717 
+0.341782 
+0.078701 
+0.074996 
+0.500000 
+
+0.058619 
+0.067919 
+0.087616 
+0.321611 
+0.079172 
+0.075316 
+0.500000 
+
+0.085734 
+0.067919 
+0.084319 
+0.300203 
+0.074794 
+0.074626 
+0.500000 
+
+0.041134 
+0.069565 
+0.085541 
+0.321611 
+0.076691 
+0.074636 
+0.500000 
+
+0.037962 
+0.068500 
+0.083992 
+0.300203 
+0.074171 
+0.075015 
+0.500000 
+This is a Amphibian
   
 
 
