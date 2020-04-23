@@ -99,15 +99,6 @@ Classifier with motif length %d has been written to file Bagging_claffifier_k=7.
 
 
 
-
-
-
-
-
-
-
-
-
 *******************************************************************************************************
 Taxa identification
 
