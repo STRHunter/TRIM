@@ -65,7 +65,7 @@ Trainig the classifier TRIMEC
 i) What is does ?
 
   This code was used to train the TRIMEC. However, it is not essential to run the taxa identification utility. We have uploaded 
-  and provided the instruction how to use pre-built training in the taxa identification section. So user can skip this steps.
+  and provided the instruction about how to use pre-built training in the taxa identification section. So user can skip this steps.
   
 ii)  System commands to do the task  
   
@@ -73,5 +73,20 @@ To compile the source code 'Bagging_classifier_v1_Building.c': $gcc Bagging_clas
 
 To run the executable file 'TRIM':   $./TRIM_classifier_Bulder
 
+*******************************************************************************************************
+Taxa identification
+
+i) What is does ?
+
+  It is used to identify taxa of a given genome sequence and do not require any other inforation.
+ 
+ii)  System commands to do the task
+
+ To compile the source code 'Bagging_classifier_v1.c': $gcc Bagging_classifier_v1.c -DAMX=38900000000 lm -o TRIMEC
+ 
+ To run the executable file 'TRIMEC': $./TRIMEC
+ 
+ Supplementary_File_F1.docx contains several runtime instatnces of TRIMEC.
+  
 
 
