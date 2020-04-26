@@ -22,12 +22,12 @@ ii) System commands to do the task
 Note: Cleaning genome sequence is mandatory for correct working of all other executables involved in following computations. 
 
 ****************************************************************************************************
-Computation TRIM vectors 
+Computation of TRIM vectors 
 
 
 i) What is does ?
 
-   Transforming genomic sequences into their corresponding TRIM vectors. Here we assume that all the genome sequences 
+   Transforms genomic sequences into their corresponding TRIM vectors. Here, we assume that all the genome sequences 
    have been cleaned by the 'data_cleaning' utility.  
  
 ii)  System commands to do the task
@@ -58,9 +58,10 @@ ii)  System commands to do the task
      Constructing TRIM vector for genome stored in file: Genome4.fna.txt
      Storing the TRIM vector in: TRIM_vector_Genome4.txt
      
-     Note1: The utility 'TRIM' autimaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
+     Note: The utility 'TRIM' autimaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
      to the Nth input genome into that file. Input file name can be any user specified filenane that contain a clean genomic
-     sequence, but the utility will use the same convention for output file names. 
+     sequence, but the utility will use the same convention for output file names i.e., 
+     TRIM_vector_Genome1.txt, TRIM_vector_Genome2.txt, TRIM_vector_Genome3.txt and so on. 
      
      
     
