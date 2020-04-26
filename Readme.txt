@@ -22,6 +22,7 @@ ii) System commands to do the task
 
 Note: Cleaning genome sequence is mandatory for correct working of all other executables involved in following computations. 
 
+
 ****************************************************************************************************
 Computation of TRIM vectors 
 C code: 'TRIM.c'
@@ -61,10 +62,10 @@ ii)  System commands to do the task
      Constructing TRIM vector for genome stored in file: Genome4.fna.txt
      Storing the TRIM vector in: TRIM_vector_Genome4.txt
      
-     Note: The utility 'TRIM' autimaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
+     Note: The utility 'TRIM' automaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
      to the Nth input genome into that file. However, the input filename can be any user specified filename that contain a
      cleaned genomic sequence. In other words, the utility 'TRIM' will store the TRIM vector for the first input genome into
-     TRIM_vector_Genome1.txt, the TRIM vector for the second input genome into TRIM_vector_Genom2.txt and so on. 
+     TRIM_vector_Genome1.txt, the TRIM vector for the second input genome into TRIM_vector_Genome2.txt and so on. 
      
      
     
@@ -73,7 +74,7 @@ ii)  System commands to do the task
 Application: Phylogeny construction
 
 
-We have used the distance-based phylogney. There are two major steps in computation of distance-based phylogney 
+We have used the distance-matrix based phylogney. There are two major steps in computation of distance-matrix based phylogney 
 
 a) Computation of distance matrix. 
 
@@ -100,7 +101,7 @@ ii)  System commands to do the task
      
 b) Contruction of phylogeny tree using hierarchical clustering algorithm NJ from the distance matrix.
 
-  In this step we have used MATLAB to costruct the phylogeny tree from the distance matric stored in 'TRIM_distance_matrix.txt'.
+  In this step we have used MATLAB to costruct the phylogeny tree from the distance matrix stored in 'TRIM_distance_matrix.txt'.
   The following MATLAB script will load the TRIM distance matrix from file 'TRIM_distance_matrix.txt' into a MATLAB variable 'D'
   
   .........................................
@@ -137,7 +138,7 @@ i) What is does?
  
 ii)  System commands to do the task
 
- To compile the source code 'Bagging_classifier_v1.c': $gcc Bagging_classifier_v1.c -DAMX=38900000000 lm -o TRIMEC
+ To compile the source code 'TRIMEC.c': $gcc TRIMEC.c -DAMX=38900000000 lm -o TRIMEC
  
  To run the executable file 'TRIMEC': $./TRIMEC
  
