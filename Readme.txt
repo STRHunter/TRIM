@@ -160,32 +160,7 @@ H=28686.171945
 Total entropy maximizes at k=7
 Locading corresponding classifier at k=7....
 
-Instance 0   16384
-Instance 1   16384
-Instance 2   16384
-Instance 3   16384
-Instance 4   16384
-Instance 5   16384
-Instance 6   16384
-Instance 7   16384
-Instance 8   16384
-Instance 9   16384
-Instance 10   16384
-Instance 11   16384
-Instance 12   16384
-Instance 13   16384
-Instance 14   16384
-Instance 15   16384
-Instance 16   16384
-Instance 17   16384
-Instance 18   16384
-Instance 19   16384
-Instance 20   16384
-Instance 21   16384
-Instance 22   16384
-Instance 23   16384
-Instance 24   16384
-
+C1:
 0.068795 
 0.074580 
 0.085106 
@@ -194,6 +169,7 @@ Instance 24   16384
 0.075393 
 0.500000 
 
+C2:
 0.028597 
 0.073390 
 0.087673 
@@ -202,6 +178,7 @@ Instance 24   16384
 0.073517 
 0.500000 
 
+C3:
 0.046292 
 0.073192 
 0.086085 
@@ -210,6 +187,7 @@ Instance 24   16384
 0.074496 
 0.500000 
 
+C4:
 0.034589 
 0.075352 
 0.085452 
@@ -218,6 +196,7 @@ Instance 24   16384
 0.075101 
 0.500000 
 
+C5:
 0.043827 
 0.063790 
 0.084590 
@@ -225,7 +204,7 @@ Instance 24   16384
 0.078164 
 0.074720 
 0.500000 
-
+C6
 0.068795 
 0.070581 
 0.088238 
@@ -233,7 +212,7 @@ Instance 24   16384
 0.080512 
 0.075077 
 0.500000 
-
+C7
 0.064444 
 0.070353 
 0.087800 
