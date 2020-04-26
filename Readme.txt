@@ -19,7 +19,7 @@ ii) System commands to do the task
    
     The output will be stored in a file 'Genome.fna.txt' or any user specified filename, which will be the clean sequence containing only the acgt characters. 
 
-
+Note: Cleaning genome sequence is mandatory for correct working of all other executables involved in following computations. 
 
 ****************************************************************************************************
 TRIM vector computation 
@@ -27,7 +27,8 @@ TRIM vector computation
 
 i) What is does ?
 
-   Transforming genomic sequences into their corresponding TRIM vectors
+   Transforming genomic sequences into their corresponding TRIM vectors. Here we assume that all the genome sequences 
+   have been cleaned by the 'data_cleaning' utility.  
  
 ii)  System commands to do the task
 
@@ -58,7 +59,9 @@ ii)  System commands to do the task
      Storing the TRIM vector in: TRIM_vector_Genome4.txt
      
      Note: The utility 'TRIM' autimaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
-     to the Nth input genome.  
+     to the Nth input genome. Input file name can be any user specified filenane that contain a clean genomic sequence.
+     
+     
      
      We have used the utility to generate 218 TRIM vectos for 296 animal genomes and 2 non-animal genomes at k=7 as 
      
