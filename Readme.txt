@@ -144,6 +144,25 @@ ii)  System commands to do the task
      the maximum available genome length of the species taken from in NCBI repository under this study. 
      For any genome upto this length, user need not specify length of the experimenting sequence.)
  
+ Note: Execution of TRIMEC depends on two training sets stored in the files 'Bagging_classifier_at_k=7.txt' and
+ 'Bagging_classifier_at_k=6.txt'. Based on maximization of H, TRIMEC loads either of this file to identify 
+ taxa of the given genome sequence. These two files have been generated while training the TRIMEC. However, due to 
+ the constraints of 'Github' we are unable to upload the file 'Bagging_classifier_at_k=7.txt' as its size is greater 
+ than 25 MB limit. Thus we have split the file 'Bagging_classifier_at_k=7.txt' into tree files 'part1.txt', 'part2.txt' 
+ and 'part3.txt'. We have uploaded the files 
+ a) 'Bagging_classifier_at_k=6.txt'
+ b) 'part1.txt'
+ c) 'part2.txt'
+ d) 'part3.txt'
+ 
+ The basic dependency to run 'TRIMEC' is that all these four files should be in the same directory with the executable 'TRIMEC'
+ and the following command need to be proformed before running the 'TRIMEC'
+ 
+ $cat part1.txt part2.txt part3.txt > 'Bagging_classifier_at_k=7.txt'
+ 
+ It should be also be note that the file names should be 'Bagging_classifier_at_k=7.txt' and 'Bagging_classifier_at_k=6.txt'
+ as these two file names are used by TRIMEC to load them. 
+ 
  To run the executable file 'TRIMEC': $./TRIMEC
  
  A typical instance of the TRIMEC is as 
@@ -397,39 +416,10 @@ This is an Amphibian
 
 
 *****************************************************************************************************
-
-
-
-Note2: We have used the utility 'TRIM' to generate 218 TRIM vectos for 296 animal genomes and 2 non-animal genomes 
-     at k=7 as 
-     
-     TRIM_vector_Genome1.txt to TRIM_vector_Genome3.txt : Taxa Insect
-     TRIM_vector_Genome4.txt to TRIM_vector_Genome67.txt : Taxa Fish
-     TRIM_vector_Genome68.txt to TRIM_vector_Genome93.txt : Taxa Bird
-     TRIM_vector_Genome94.txt to TRIM_vector_Genome206.txt : Taxa Mammal
-     TRIM_vector_Genome207.txt to TRIM_vector_Genome212.txt : Taxa Amphibian
-     TRIM_vector_Genome213.txt to TRIM_vector_Genome216.txt : Taxa Reptile
-     TRIM_vector_Genome217.txt to TRIM_vector_Genome218.txt : Taxa Non_animal
-    
-    All these TRIM vectors that is from 'TRIM_vector_Genome1.txt' to 'TRIM_vector_Genome218.txt' are used to train 
-    the classifier 'TRIMEC' at k=7.
-    
-    We have separately used the the utility 'TRIM' to generate 91 TRIM vectos for 78 animal genomes and 
-    13 non-animal genomes at k=6 as
-    
-    TRIM_vector_Genome1.txt to TRIM_vector_Genome59.txt : Taxa Insect
-    TRIM_vector_Genome60.txt to TRIM_vector_Genome78.txt : Taxa Fish
-    TRIM_vector_Genome79.txt to TRIM_vector_Genome91.txt : Taxa Non-animal
-    
-    All these TRIM vectors that is from 'TRIM_vector_Genome1.txt' to 'TRIM_vector_Genome91.txt' are used to train 
-    the classifier 'TRIMEC' at k=6
-    
-
-
-
-
-
 Trainig the classifier TRIMEC
+
+Note: Although this step is not a requirement to use the TRIMEC, for interested users we are providing the process to train the TRIMEC. User can skip this step. 
+
 
 i) What is does ?
 
