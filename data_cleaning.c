@@ -21,7 +21,7 @@ int main (int *argc, char *argv[])
       perror ("Error opening file");
       return(-1);
    } 
-   
+    
    fp2 = fopen(argv[2], "wb");// opening file to write raw dna
    if( fp2 == NULL )  {
       perror ("Error opening file");
