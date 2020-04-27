@@ -427,7 +427,6 @@ Note: Although this step is not a requirement to use the TRIMEC, for interested 
 
 
 
-
 i) What is does ?
 
   This code is used to train the TRIMEC. However, it is not essential to run the taxa identification utility. We have uploaded 
@@ -437,6 +436,24 @@ i) What is does ?
 ii)  System commands to do the task  
   
 To compile the source code 'TRIMEC_train.c': $gcc TRIMEC_train.c -lm -o TRIMEC_train
+
+Before runnig the 'TRIMEC_train' we need to generate TRIM vectors and need to note the class-labels. We have used the utility 'TRIM' to generate TRIM vectors at k=7 with following the class-labels as 
+
+TRIM_vector_Genome1.txt to TRIM_vector_Genome3.txt : class Insect
+TRIM_vector_Genome4.txt to TRIM_vector_Genome67.txt : class Fish
+TRIM_vector_Genome68.txt to TRIM_vector_Genome93.txt : class Bird
+TRIM_vector_Genome94.txt to TRIM_vector_Genome206.txt : class Mammal
+TRIM_vector_Genome207.txt to TRIM_vector_Genome212.txt : class Amphibian
+TRIM_vector_Genome213.txt to TRIM_vector_Genome216.txt : class Reptile
+TRIM_vector_Genome217.txt to TRIM_vector_Genome218.txt : class Non-animal
+
+and separately used the utility 'TRIM' to generate TRIM vectors at k=6 with the following class-labels
+
+TRIM_vector_Genome1.txt to TRIM_vector_Genome59.txt : class Insect
+TRIM_vector_Genome60.txt to TRIM_vector_Genome78.txt : class Fish
+TRIM_vector_Genome79.txt to TRIM_vector_Genome91.txt : class Non-animal
+
+
 
 To run the executable file 'TRIMEC_train':   $./TRIMEC_train
 
