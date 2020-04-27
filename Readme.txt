@@ -146,22 +146,24 @@ ii)  System commands to do the task
  
  Note: Execution of TRIMEC depends on two training sets stored in the files 'Bagging_classifier_at_k=7.txt' and
  'Bagging_classifier_at_k=6.txt'. Based on maximization of H, TRIMEC loads either of this file to identify 
- taxa of the given genome sequence. These two files have been generated while training the TRIMEC. However, due to 
- the constraints of 'Github' we are unable to upload the file 'Bagging_classifier_at_k=7.txt' as its size is greater 
- than 25 MB limit. Thus we have split the file 'Bagging_classifier_at_k=7.txt' into tree files 'part1.txt', 'part2.txt' 
- and 'part3.txt'. We have uploaded the files 
+ taxa of the given genome sequence. Thus these two files should be present in the same directory with the executable
+ 'TRIMEC'. These files have been generated while training the TRIMEC, hence shoule be available with 'TRIMEC'. 
+ 
+ However, due to the constraints of 'Github' we are unable to upload the file 'Bagging_classifier_at_k=7.txt' as its size
+ is greater than 25 MB limit. Thus, we have split the file 'Bagging_classifier_at_k=7.txt' into tree files 'part1.txt',
+ 'part2.txt' and 'part3.txt' and have uploaded the files as 
  a) 'Bagging_classifier_at_k=6.txt'
  b) 'part1.txt'
  c) 'part2.txt'
  d) 'part3.txt'
  
- The basic dependency to run 'TRIMEC' is that all these four files should be in the same directory with the executable 'TRIMEC'
- and the following command need to be proformed before running the 'TRIMEC'
+ User need to use the following command before running the 'TRIMEC'
  
  $cat part1.txt part2.txt part3.txt > 'Bagging_classifier_at_k=7.txt'
  
- It should be also be note that the file names should be 'Bagging_classifier_at_k=7.txt' and 'Bagging_classifier_at_k=6.txt'
- as these two file names are used by TRIMEC to load them. 
+ ***It should be also be note that the filenames should be like 'Bagging_classifier_at_k=7.txt' and
+ 'Bagging_classifier_at_k=6.txt' as these two filenames are used by TRIMEC to load its training data.
+ 
  
  To run the executable file 'TRIMEC': $./TRIMEC
  
@@ -418,20 +420,25 @@ This is an Amphibian
 *****************************************************************************************************
 Trainig the classifier TRIMEC
 
-Note: Although this step is not a requirement to use the TRIMEC, for interested users we are providing the process to train the TRIMEC. User can skip this step. 
+C source code: TRIMEC_train.c
+Executable code: TRIMEC_train
+
+Note: Although this step is not a requirement to use the TRIMEC, for interested users we are providing the process to train the TRIMEC. User can skip this step and use the 'TRIMEC' to identify taxa of a genome. 
+
+
 
 
 i) What is does ?
 
-  This code was used to train the TRIMEC. However, it is not essential to run the taxa identification utility. We have uploaded 
+  This code is used to train the TRIMEC. However, it is not essential to run the taxa identification utility. We have uploaded 
   and provided the instruction about how to use pre-built training in the taxa identification section. So user can skip this 
   steps.
   
 ii)  System commands to do the task  
   
-To compile the source code 'Bagging_classifier_v1_Building.c': $gcc Bagging_classifier_v1_Building.c -lm -o TRIM_classifier_Bulder
+To compile the source code 'TRIMEC_train.c': $gcc TRIMEC_train.c -lm -o TRIMEC_train
 
-To run the executable file 'TRIM':   $./TRIM_classifier_Bulder
+To run the executable file 'TRIMEC_train':   $./TRIMEC_train
 
 The output of the runtime instance used to create the file 'Bagging_claffifier_k=7.txt':
 
