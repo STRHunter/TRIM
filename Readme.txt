@@ -174,247 +174,297 @@ ii)  System commands to do the task
  
  ...........................Welcome to genome classifier utility.....................
 
-Input file name of the genome to identify its taxa: D1.txt
+Input file name of the genome to identify its taxa: 
 ...........................System is performing the following tasks................
 
-Constructing TRIM vector for the genome stored in file: D1.txt ... 
+Constructing TRIM vector for the genome stored in file: Bird.txt ... 
 at k=6
-H=20276.291245
+19026.705265
 at k=7
-H=28686.171945
+23379.252336
 
-Total entropy maximizes at k=7
+Total interval entropy (H) maximizes at k=7
 Locading corresponding classifier at k=7....
+Output of classifier 0
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-TRIM distances of the given genome generated from 25 classfiers 
+Amphibian: 0.109691 
+Reptile: 0.086175 
+Bird: 0.040884 
+Insect: 0.407014 
+Fish: 0.097783 
+Mammal: 0.090883 
+Non-animal: 0.285118 
 
-C1:
-0.068795 
-0.074580 
-0.085106 
-0.317337 
-0.075354 
-0.075393 
-0.500000 
+Output of classifier 1
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C2:
-0.028597 
-0.073390 
-0.087673 
-0.300203 
-0.074356 
-0.073517 
-0.500000 
+Amphibian: 0.111067 
+Reptile: 0.081358 
+Bird: 0.045383 
+Insect: 0.401142 
+Fish: 0.099666 
+Mammal: 0.091016 
+Non-animal: 0.265147 
 
-C3:
-0.046292 
-0.073192 
-0.086085 
-0.365971 
-0.075493 
-0.074496 
-0.500000 
+Output of classifier 2
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C4:
-0.034589 
-0.075352 
-0.085452 
-0.321611 
-0.076503 
-0.075101 
-0.500000 
+Amphibian: 0.111698 
+Reptile: 0.118272 
+Bird: 0.040906 
+Insect: 0.399459 
+Fish: 0.097152 
+Mammal: 0.091534 
+Non-animal: 0.265147 
 
-C5:
-0.043827 
-0.063790 
-0.084590 
-0.300203 
-0.078164 
-0.074720 
-0.500000 
+Output of classifier 3
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C6
-0.068795 
-0.070581 
-0.088238 
-0.326818 
-0.080512 
-0.075077 
-0.500000 
+Amphibian: 0.109294 
+Reptile: 0.092244 
+Bird: 0.043210 
+Insect: 0.417346 
+Fish: 0.098491 
+Mammal: 0.091087 
+Non-animal: 0.265147 
 
-C7
-0.064444 
-0.070353 
-0.087800 
-0.300203 
-0.075759 
-0.073566 
-0.500000 
+Output of classifier 4
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C8
-0.040569 
-0.067919 
-0.085370 
-0.300203 
-0.073270 
-0.075941 
-0.500000 
+Amphibian: 0.108573 
+Reptile: 0.089151 
+Bird: 0.042039 
+Insect: 0.407014 
+Fish: 0.097605 
+Mammal: 0.091241 
+Non-animal: 0.265147 
 
-C9
-0.071189 
-0.070353 
-0.087103 
-0.306424 
-0.075623 
-0.074947 
-0.500000 
+Output of classifier 5
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C10
-0.057695 
-0.073390 
-0.085872 
-0.309254 
-0.075374 
-0.073982 
-0.500000 
+Amphibian: 0.110941 
+Reptile: 0.086642 
+Bird: 0.050130 
+Insect: 0.399528 
+Fish: 0.100942 
+Mammal: 0.091204 
+Non-animal: 0.282800 
 
-C11
-0.075128 
-0.067919 
-0.086699 
-0.326818 
-0.077091 
-0.075563 
-0.500000 
+Output of classifier 6
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C12
-0.087444 
-0.083584 
-0.085746 
-0.306424 
-0.075192 
-0.076949 
-0.500000 
+Amphibian: 0.106303 
+Reptile: 0.100883 
+Bird: 0.048903 
+Insect: 0.390352 
+Fish: 0.100366 
+Mammal: 0.091332 
+Non-animal: 0.285118 
 
-C13
-0.080872 
-0.080793 
-0.087114 
-0.321611 
-0.074348 
-0.076758 
-0.500000 
+Output of classifier 7
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C14
-0.082834 
-0.075352 
-0.084662 
-0.300203 
-0.075373 
-0.074815 
-0.500000 
+Amphibian: 0.110123 
+Reptile: 0.082703 
+Bird: 0.048632 
+Insect: 0.386168 
+Fish: 0.100228 
+Mammal: 0.091076 
+Non-animal: 0.265147 
 
-C15
-0.048884 
-0.073192 
-0.086113 
-0.321611 
-0.077589 
-0.076411 
-0.500000 
+Output of classifier 8
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C16
-0.056742 
-0.088158 
-0.084874 
-0.326818 
-0.075996 
-0.076420 
-0.500000 
+Amphibian: 0.108953 
+Reptile: 0.089151 
+Bird: 0.046997 
+Insect: 0.383405 
+Fish: 0.096158 
+Mammal: 0.090610 
+Non-animal: 0.265147 
 
-C17
-0.037962 
-0.070581 
-0.083478 
-0.300203 
-0.077337 
-0.074267 
-0.500000 
+Output of classifier 9
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C18
-0.045507 
-0.069565 
-0.087489 
-0.309254 
-0.076216 
-0.075066 
-0.500000 
+Amphibian: 0.112096 
+Reptile: 0.081088 
+Bird: 0.042736 
+Insect: 0.401142 
+Fish: 0.098992 
+Mammal: 0.090659 
+Non-animal: 0.265147 
 
-C19
-0.075060 
-0.070353 
-0.085335 
-0.300203 
-0.075295 
-0.075401 
-0.500000 
+Output of classifier 10
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C20
-0.089092 
-0.068500 
-0.086290 
-0.321611 
-0.075817 
-0.075501 
-0.500000 
+Amphibian: 0.110357 
+Reptile: 0.089151 
+Bird: 0.039225 
+Insect: 0.442519 
+Fish: 0.097020 
+Mammal: 0.091420 
+Non-animal: 0.285118 
 
-C21
-0.072141 
-0.083584 
-0.083717 
-0.341782 
-0.078701 
-0.074996 
-0.500000 
+Output of classifier 11
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C22
-0.058619 
-0.067919 
-0.087616 
-0.321611 
-0.079172 
-0.075316 
-0.500000 
+Amphibian: 0.108280 
+Reptile: 0.082703 
+Bird: 0.035661 
+Insect: 0.401142 
+Fish: 0.100002 
+Mammal: 0.091058 
+Non-animal: 0.265147 
 
-C23
-0.085734 
-0.067919 
-0.084319 
-0.300203 
-0.074794 
-0.074626 
-0.500000 
+Output of classifier 12
+TRIM distance of the given genme from Mean TRIM Vector of 
 
-C24
-0.041134 
-0.069565 
-0.085541 
-0.321611 
-0.076691 
-0.074636 
-0.500000 
+Amphibian: 0.110488 
+Reptile: 0.086642 
+Bird: 0.036960 
+Insect: 0.399459 
+Fish: 0.096525 
+Mammal: 0.091101 
+Non-animal: 0.265147 
 
-C25
-0.037962 
-0.068500 
-0.083992 
-0.300203 
-0.074171 
-0.075015 
-0.500000 
-Bases on maximum agreement 
-This is an Amphibian
-  
+Output of classifier 13
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.115087 
+Reptile: 0.090642 
+Bird: 0.038982 
+Insect: 0.399459 
+Fish: 0.098246 
+Mammal: 0.091051 
+Non-animal: 0.265147 
+
+Output of classifier 14
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.107625 
+Reptile: 0.082603 
+Bird: 0.049336 
+Insect: 0.389461 
+Fish: 0.099539 
+Mammal: 0.090983 
+Non-animal: 0.265147 
+
+Output of classifier 15
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.119480 
+Reptile: 0.083100 
+Bird: 0.037288 
+Insect: 0.383405 
+Fish: 0.096801 
+Mammal: 0.091551 
+Non-animal: 0.285118 
+
+Output of classifier 16
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.114246 
+Reptile: 0.082603 
+Bird: 0.038385 
+Insect: 0.399459 
+Fish: 0.100460 
+Mammal: 0.091390 
+Non-animal: 0.282800 
+
+Output of classifier 17
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.110641 
+Reptile: 0.081088 
+Bird: 0.042139 
+Insect: 0.383405 
+Fish: 0.097257 
+Mammal: 0.090561 
+Non-animal: 0.265147 
+
+Output of classifier 18
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.107484 
+Reptile: 0.090642 
+Bird: 0.042477 
+Insect: 0.389461 
+Fish: 0.096830 
+Mammal: 0.091418 
+Non-animal: 0.282800 
+
+Output of classifier 19
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.111511 
+Reptile: 0.082603 
+Bird: 0.035895 
+Insect: 0.383405 
+Fish: 0.097637 
+Mammal: 0.090662 
+Non-animal: 0.282800 
+
+Output of classifier 20
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.117847 
+Reptile: 0.095898 
+Bird: 0.050672 
+Insect: 0.386168 
+Fish: 0.099714 
+Mammal: 0.091216 
+Non-animal: 0.265147 
+
+Output of classifier 21
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.112496 
+Reptile: 0.082703 
+Bird: 0.042113 
+Insect: 0.383405 
+Fish: 0.097194 
+Mammal: 0.091038 
+Non-animal: 0.265147 
+
+Output of classifier 22
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.113165 
+Reptile: 0.081088 
+Bird: 0.047514 
+Insect: 0.386168 
+Fish: 0.098234 
+Mammal: 0.090914 
+Non-animal: 0.265147 
+
+Output of classifier 23
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.112496 
+Reptile: 0.095366 
+Bird: 0.048541 
+Insect: 0.383405 
+Fish: 0.098348 
+Mammal: 0.091303 
+Non-animal: 0.282800 
+
+Output of classifier 24
+TRIM distance of the given genme from Mean TRIM Vector of 
+
+Amphibian: 0.107625 
+Reptile: 0.089078 
+Bird: 0.044162 
+Insect: 0.383405 
+Fish: 0.099620 
+Mammal: 0.090067 
+Non-animal: 0.285118 
+
+
+
+Based on the maximum agreement among the 25 classifier under TRIMEC
+This is a Bird
+ 
 
 
 *****************************************************************************************************
