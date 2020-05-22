@@ -94,7 +94,7 @@ ii)  System commands to do the task
 
      To run the executable code 'TRIM_distance_matrix':   $./TRIM_distance_matrix
      
-     A typial output instance
+     A typial output instance of the executable 'TRIM_distance_matrix'
      ........................................
      Enter the number of TRIM vectors to construct TRIM distance matrix: 12
      TRIM distance matrix is written into filename: TRIM_distance_matrix.txt
@@ -135,7 +135,7 @@ Executable code: 'TRIMEC'
 
 i) What is does?
 
-  It is used to identify the taxa of a given genome sequence and do not require any other inforation.
+  It is used to identify the taxa of a given genome sequence and do not require any other information.
  
 ii)  System commands to do the task
 
@@ -145,14 +145,19 @@ ii)  System commands to do the task
      the maximum available genome length of the species taken from in NCBI repository under this study. 
      For any genome upto this length, user need not specify length of the experimenting sequence.)
  
- Note: Execution of TRIMEC depends on two training sets stored in the files 'Bagging_classifier_at_k=7.txt' and
- 'Bagging_classifier_at_k=6.txt'. Based on maximization of H, TRIMEC loads either of this file to identify 
- taxa of the given genome sequence. Thus these two files should be present in the same directory with the executable
- 'TRIMEC'. These files have been generated while training the TRIMEC, hence shoule be available with 'TRIMEC'. 
+ Note: Execution of TRIMEC depends on two training sets stored in the files 
+ 
+ 1. 'Bagging_classifier_at_k=7.txt' 
+ 2. 'Bagging_classifier_at_k=6.txt' 
+ 
+ Based on maximization of H, TRIMEC loads either of this file to identify taxa of the given genome sequence. Thus these two files
+ should be present in the same directory with the executable 'TRIMEC'. These files were generated while training the TRIMEC, hence
+ shoule be available with 'TRIMEC'. 
  
  However, due to the constraints of 'Github' we are unable to upload the file 'Bagging_classifier_at_k=7.txt' as its size
- is greater than 25 MB limit. Thus, we have split the file 'Bagging_classifier_at_k=7.txt' into tree files 'part1.txt',
+ is greater than 25 MB limit. Thus, we have split the file 'Bagging_classifier_at_k=7.txt' into three files 'part1.txt',
  'part2.txt' and 'part3.txt' and have uploaded the files as 
+ 
  a) 'Bagging_classifier_at_k=6.txt'
  b) 'part1.txt'
  c) 'part2.txt'
@@ -162,13 +167,13 @@ ii)  System commands to do the task
  
  $cat part1.txt part2.txt part3.txt > 'Bagging_classifier_at_k=7.txt'
  
- ***It should be also be note that the filenames should be like 'Bagging_classifier_at_k=7.txt' and
- 'Bagging_classifier_at_k=6.txt' as these two filenames are used by TRIMEC to load its training data.
+ ***It is to be note that the filenames should be 'Bagging_classifier_at_k=7.txt' and
+ 'Bagging_classifier_at_k=6.txt' for proper working of TRIMEC.
  
  
  To run the executable file 'TRIMEC': $./TRIMEC
  
- A typical instance of the TRIMEC is as 
+ A typical instance of the executalbe 'TRIMEC' is as 
  
  .......................................................
  
@@ -185,7 +190,7 @@ at k=7
 23379.252336
 
 Total interval entropy (H) maximizes at k=7
-Locading corresponding classifier at k=7....
+Loading corresponding classifier at k=7....
 Output of classifier 0
 TRIM distance of the given genme from Mean TRIM Vector of 
 
@@ -468,8 +473,8 @@ This is a Bird
  
 ................................................
 
-We have also implemented the utility that can identify taxa of a genome from its partial parts. It also require the same training
-files 'Bagging_classifier_at_k=7.txt' and 'Bagging_classifier_at_k=6.txt'. 
+We have also implemented the utility that can identify taxa of a genome from its partial sequence. The utility also requires that
+the same training files 'Bagging_classifier_at_k=7.txt' and 'Bagging_classifier_at_k=6.txt' should be present in the same directory. 
 
 C source code: 'TRIMEC_p.c'
 Executable code: 'TRIMEC_p'
@@ -478,7 +483,7 @@ To compile the source code 'TRIMEC_p.c': $gcc TRIMEC.c -DAMX=38900000000 lm -o T
 
 To run the executable file 'TRIMEC_p': $./TRIMEC_P
  
-A typical output instance of the 'TRIMEC_p' is as 
+A typical output instance of the executable 'TRIMEC_p' is as 
 
 ..................................................
 
@@ -777,96 +782,4 @@ Non-animal: 0.285118
 
 Based on the maximum agreement among the 25 classifier under TRIMEC
 This is a Bird
-
-
-
-
-*****************************************************************************************************
-Trainig the classifier TRIMEC
-
-C source code: TRIMEC_train.c
-Executable code: TRIMEC_train
-
-Note: Although this step is not a requirement to use the TRIMEC, for interested users we are providing the process to train the TRIMEC. User can skip this step and use the 'TRIMEC' to identify taxa of a genome. 
-
-
-
-i) What is does ?
-
-  This code is used to train the TRIMEC. However, it is not essential to run the taxa identification utility. We have uploaded 
-  and provided the instruction about how to use pre-built training in the taxa identification section. So user can skip this 
-  steps.
-  
-ii)  System commands to do the task  
-  
-To compile the source code 'TRIMEC_train.c': $gcc TRIMEC_train.c -lm -o TRIMEC_train
-
-Before runnig the 'TRIMEC_train' we need to generate TRIM vectors and need to note the class-labels. We have used the utility 'TRIM' to generate TRIM vectors at k=7 with following the class-labels as 
-
-TRIM_vector_Genome1.txt to TRIM_vector_Genome3.txt : class Insect
-TRIM_vector_Genome4.txt to TRIM_vector_Genome67.txt : class Fish
-TRIM_vector_Genome68.txt to TRIM_vector_Genome93.txt : class Bird
-TRIM_vector_Genome94.txt to TRIM_vector_Genome206.txt : class Mammal
-TRIM_vector_Genome207.txt to TRIM_vector_Genome212.txt : class Amphibian
-TRIM_vector_Genome213.txt to TRIM_vector_Genome216.txt : class Reptile
-TRIM_vector_Genome217.txt to TRIM_vector_Genome218.txt : class Non-animal
-
-and separately used the utility 'TRIM' to generate TRIM vectors at k=6 with the following class-labels
-
-TRIM_vector_Genome1.txt to TRIM_vector_Genome59.txt : class Insect
-TRIM_vector_Genome60.txt to TRIM_vector_Genome78.txt : class Fish
-TRIM_vector_Genome79.txt to TRIM_vector_Genome91.txt : class Non-animal
-
-
-
-To run the executable file 'TRIMEC_train':   $./TRIMEC_train
-
-The output of the runtime instance used to create the file 'Bagging_claffifier_k=7.txt':
-
-...........................................
-Enter the number of TRIM Vectors to loan in-meory: 218
-Enter the motif lengh used to construct TRIM Vectors: 7
-Collecting prior-knowledge aout "class-label" of TRIM Vectors
-Provide the range of indices of TRIM Vectors for the class Amphibian
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 207 212 4
-Provide the range of indices of TRIM Vectors for the class Reptile
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training  213 216 2
-Provide the range of indices of TRIM Vectors for the class Bird
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 68 93 20
-Provide the range of indices of TRIM Vectors for the class Insect
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 1 3  3
-Provide the range of indices of TRIM Vectors for the class Fish
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 4 67 55
-Provide the range of indices of TRIM Vectors for the class Mammal
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 94 206 90
-Provide the range of indices of TRIM Vectors for the class Non-animal
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 217 218 2
-Classifier with motif length 7 has been written to file Bagging_claffifier_k=7.txt
-
-
-
-
-The output of the runtime instance used to create the file 'Bagging_claffifier_k=6.txt':
-
-.......................................................
-Enter the number of TRIM Vectors to loan in-meory: 91
-Enter the motif lengh used to construct TRIM Vectors: 6
-Collecting prior-knowledge aout "class-label" of TRIM Vectors
-Provide the range of indices of TRIM Vectors for the class Amphibian
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 0 0 0
-Provide the range of indices of TRIM Vectors for the class Reptile
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training  0 0 0
-Provide the range of indices of TRIM Vectors for the class Bird
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 0 0 0
-Provide the range of indices of TRIM Vectors for the class Insect
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 1 59  50
-Provide the range of indices of TRIM Vectors for the class Fish
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 60 78 15
-Provide the range of indices of TRIM Vectors for the class Mammal
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 0 0 0
-Provide the range of indices of TRIM Vectors for the class Non-animal
-Enter lower and upper indices along with the number of TRIM Vectors for training: Put zeros to skip training 79 91 10
-Classifier with motif length 7 has been written to file Bagging_claffifier_k=6.txt
-
-
 
