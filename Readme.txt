@@ -6,7 +6,7 @@ Executable code: 'data_cleaning'
 
 i) What is does?
 
-   The code is used to remove all the non-acgt charaters including annotationas and delimeters from a genome sequence. 
+   The code is used to remove all the non-acgt charaters including annotations and delimeters from a genome sequence. 
 
 ii) System commands to do the task
 
@@ -20,7 +20,7 @@ ii) System commands to do the task
    
     The output will be stored in a file 'Genome.fna.txt' or any user specified filename, which will be the clean sequence containing only the acgt characters. 
 
-Note: Cleaning genome sequence is mandatory for correct working of all other executables involved in following computations. 
+Note: Cleaning genome sequence is mandatory for correct working of all other executables. 
 
 
 ****************************************************************************************************
@@ -42,9 +42,9 @@ ii)  System commands to do the task
      the maximum available genome length of the species taken from in NCBI repository under this study. 
      For any genome upto this length, user need not specify length of the experimenting sequence.)
  
-     To run the executable code 'TRIM':   $./TRIM 
+     To run the executable code 'TRIM':  $./TRIM 
      
-     A typical output instance
+     A typical output instance of the executable 'TRIM'
      
      .............................................
      Enter motif/k-mer length: 7
@@ -63,9 +63,10 @@ ii)  System commands to do the task
      Storing the TRIM vector in: TRIM_vector_Genome4.txt
      
      Note: The utility 'TRIM' automaically assigns the filename 'TRIM_vector_GenomeN.txt' and store the TRIM vector correspond 
-     to the Nth input genome into that file. However, the input filename can be any user specified filename that contain a
+     to the N-th input genome into that file. However, the input filename can be any user specified filename that contain a
      cleaned genomic sequence. In other words, the utility 'TRIM' will store the TRIM vector for the first input genome into
-     TRIM_vector_Genome1.txt, the TRIM vector for the second input genome into TRIM_vector_Genome2.txt and so on. 
+     a file named TRIM_vector_Genome1.txt, the TRIM vector for the second input genome into a file named TRIM_vector_Genome2.txt 
+     and so on. 
      
      
     
