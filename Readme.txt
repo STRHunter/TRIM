@@ -147,8 +147,8 @@ ii)  System commands to do the task
  
  Note: Execution of TRIMEC depends on two training sets stored in the files 
  
- 1. 'Bagging_classifier_at_k=7.txt' 
- 2. 'Bagging_classifier_at_k=6.txt' 
+ 1. 'Bagging_classifier_at_k=7.txt' (contains training for TRIMEC-7)
+ 2. 'Bagging_classifier_at_k=6.txt' (contains training for TRIMEC-6)
  
  Based on maximization of H, TRIMEC loads either of this file to identify taxa of the given genome sequence. Thus these two files
  should be present in the same directory with the executable 'TRIMEC'. These files were generated while training the TRIMEC, hence
