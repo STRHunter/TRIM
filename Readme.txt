@@ -471,6 +471,9 @@ Non-animal: 0.285118
 Based on the maximum agreement among the 25 classifier under TRIMEC
 This is a Bird
  
+Note: If for a given input genome H maximizes at k < 6 then TRIMEC will terminate with error message that it can not classify that 
+sequence due to absent of proper training data at k < 6. 
+ 
 ................................................
 
 We have also implemented the utility that can identify taxa of a genome from its partial sequence. The utility also requires that
