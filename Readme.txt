@@ -137,7 +137,7 @@ i) What is does?
 
   It is used to identify the taxa of a given genome sequence and do not require any other information.
  
-ii)  System commands to do the task
+ii)  System commands to do the task 
 
  To compile the source code 'TRIMEC.c': $gcc TRIMEC.c -DAMX=38900000000 lm -o TRIMEC
  
