@@ -1,6 +1,8 @@
 
+User manual to use the programs in our repository.
+
 ************************************************************************************************
-Data cleaning:
+Purpose- Data cleaning:
 C source code: 'data_cleaning.c'
 Executable code: 'data_cleaning'
 
@@ -24,7 +26,7 @@ Note: Cleaning genome sequence is mandatory for correct working of all other exe
 
 
 ****************************************************************************************************
-Computation of TRIM vectors 
+Purpose- Computation of TRIM vectors 
 C code: 'TRIM.c'
 Executable code: 'TRIM'
 
@@ -72,7 +74,7 @@ ii)  System commands to do the task
     
 
 *******************************************************************************************************
-Application: Phylogeny construction
+Purpose- Application: Phylogeny construction
 
 
 We have used the distance-matrix based phylogney. There are two major steps in computation of distance-matrix based phylogney 
@@ -127,11 +129,11 @@ b) Contruction of phylogeny tree using hierarchical clustering algorithm NJ from
   From the newick formatted string we draw the phylogeny trees using MEGA 7.0. However, any other tools can be used.
   
   
-
+************************************************************************************************************************************
 Application: Taxa identification
 
 C source code: 'TRIMEC.c'
-
+Executable code: 'TRIMEC'
 
 i) What is does?
 
@@ -178,3 +180,36 @@ ii)  System commands to do the task
  
  To run the executable file 'TRIMEC': $./TRIMEC
  
+ 
+ 
+*************************************************************************************************************************** 
+C source code: 'TRES.c'
+Executable code: 'TRES'
+ 
+i) What is does?
+
+  To extract TRs of any motif length(k) user can use our in-house tool Tandem Repeat Extraction from Seed(TRES). 
+  
+ 
+ii)  System commands to do the task 
+
+ To compile the source code 'TRES.c': $gcc TRES.c -DAMX=38900000000 lm -o TRES
+ 
+  (The option -DMAX indicates maximum length of genome the program will accomodate in RAM, which is presently 
+     the maximum available genome length of the species taken from in NCBI repository under this study. 
+     For any genome upto this length, user need not specify length of the experimenting sequence.)
+
+To run the executable 'TRES'
+
+$./TRES Genome.fna.txt -l 14 -k 7 > Result.txt
+
+'Genome.fna.txt' contains aclean genome and the output i.e., extracted TRs of motif length k=7 nt with cutoff length = 14 nt will be stored 
+in the file 'Result.txt'.
+
+optiopns:
+-l will indicate cutoff value, that is the minumum length of a TR instance 
+-k will indicate the motif length in number of nucleotides
+
+**********************************************************************************************************************************************
+
+Note: All the programs are tested in Ubuntu.
