@@ -141,7 +141,7 @@ i) What does it do?
  
 ii)  System commands to do the task 
 
- To compile the source code 'TRIMEC.c': $gcc TRIMEC.c -DAMX=38900000000 lm -o TRIMEC
+ To compile the source code 'TRIMEC.c': $gcc TRIMEC.c -DAMX=38900000000 -lm -o TRIMEC
  
   (The option -DMAX indicates maximum length of genome the program will accomodate in RAM, which is presently 
      the maximum available genome length of the species taken from in NCBI repository under this study. 
@@ -193,7 +193,7 @@ i) What does it do?
  
 ii)  System commands to do the task 
 
- To compile the source code 'TRES.c': $gcc TRES.c -DAMX=38900000000 lm -o TRES
+ To compile the source code 'TRES.c': $gcc TRES.c -DAMX=38900000000 -lm -o TRES
  
   (The option -DMAX indicates maximum length of genome the program will accomodate in RAM, which is presently 
      the maximum available genome length of the species taken from in NCBI repository under this study. 
