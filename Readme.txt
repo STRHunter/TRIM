@@ -5,7 +5,7 @@ User manual to use the programs in our repository.
 Purpose- Data cleaning:
 C source code: 'data_cleaning.c'
 Executable code: 'data_cleaning'
-
+hh
 i) What does it do?
 
    The code is used to remove all the non-acgt charaters including annotations and delimeters from a genome sequence. 
